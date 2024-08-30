@@ -1,0 +1,31 @@
+continuar = "s"
+
+while continuar == "s":
+    print("Escolha a operação (+, -, *, /): ")
+
+    operador = input()
+
+  
+    if operador not in ("+", "-", "*", "/"):
+        print("Opção inválida.")
+        continue
+
+  
+    num1 = float(input("Primeiro número: "))
+    num2 = float(input("Segundo número: "))
+
+
+    if operador == "+":
+        resultado = num1 + num2
+    elif operador == "-":
+        resultado = num1 - num2
+    elif operador == "*":
+        resultado = num1 * num2
+    else:
+        resultado = num1 / num2
+
+   
+    print("Resultado:", resultado)
+
+    
+    continuar = input("Deseja fazer outra operação? (s/n): ")
